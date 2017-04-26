@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1258</width>
+    <height>738</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Game</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1253</width>
+     <height>729</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="minimumSize">
+         <size>
+          <width>500</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>500</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Connect the dots to form:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="Shape_name">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>18</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QAbstractScrollArea::AdjustToContents</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="minimumSize">
+         <size>
+          <width>911</width>
+          <height>631</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>911</width>
+          <height>631</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>5</number>
+        </property>
+        <widget class="QPushButton" name="Dot3">
+         <property name="geometry">
+          <rect>
+           <x>500</x>
+           <y>420</y>
+           <width>41</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>41</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>41</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>Black Dot.png</normaloff>Black Dot.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Dot4">
+         <property name="geometry">
+          <rect>
+           <x>310</x>
+           <y>420</y>
+           <width>41</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>41</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>41</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>Black Dot.png</normaloff>Black Dot.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Dot5">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>270</y>
+           <width>41</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>41</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>41</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>Black Dot.png</normaloff>Black Dot.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Dot6">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>40</y>
+           <width>41</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>41</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>41</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>Black Dot.png</normaloff>Black Dot.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Dot2">
+         <property name="geometry">
+          <rect>
+           <x>530</x>
+           <y>260</y>
+           <width>41</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>41</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>41</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>Black Dot.png</normaloff>Black Dot.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Dot8">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>40</y>
+           <width>41</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>41</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>41</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>Black Dot.png</normaloff>Black Dot.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Dot9">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>110</y>
+           <width>41</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>41</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>41</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>Black Dot.png</normaloff>Black Dot.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Dot7">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>60</y>
+           <width>41</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>41</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>41</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>Black Dot.png</normaloff>Black Dot.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Dot10">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>130</y>
+           <width>41</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>41</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>41</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>Black Dot.png</normaloff>Black Dot.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Reset">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>550</y>
+           <width>71</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>71</width>
+           <height>71</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>71</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>415758-200.png</normaloff>415758-200.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>70</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Dot1">
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>180</y>
+           <width>41</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>41</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>41</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>Black Dot.png</normaloff>Black Dot.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>23</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="minimumSize">
+           <size>
+            <width>320</width>
+            <height>441</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>320</width>
+            <height>441</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>22</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Rules:
+*Click on 2 dots in order to connect them
+*Clicking on the same dot twice will cancel the move
+*Click on Reset (bottom left) to start over
+*Click on Refresh (bottom right) to get a new image
+*Click on Submit to get your score
+*The score will be added to your current total score</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::AutoText</enum>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="minimumSize">
+           <size>
+            <width>121</width>
+            <height>51</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>121</width>
+            <height>51</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>18</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Score:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPushButton" name="Refresh_Image">
+            <property name="minimumSize">
+             <size>
+              <width>101</width>
+              <height>101</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>101</width>
+              <height>101</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>refresh.png</normaloff>refresh.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>110</width>
+              <height>110</height>
+             </size>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Submit">
+            <property name="minimumSize">
+             <size>
+              <width>191</width>
+              <height>101</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>191</width>
+              <height>101</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>submit-button-hi.png</normaloff>submit-button-hi.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>170</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>Dot1</tabstop>
+  <tabstop>Dot2</tabstop>
+  <tabstop>Dot3</tabstop>
+  <tabstop>Dot4</tabstop>
+  <tabstop>Dot5</tabstop>
+  <tabstop>Dot6</tabstop>
+  <tabstop>Dot7</tabstop>
+  <tabstop>Dot8</tabstop>
+  <tabstop>Dot9</tabstop>
+  <tabstop>Dot10</tabstop>
+  <tabstop>Reset</tabstop>
+  <tabstop>Shape_name</tabstop>
+  <tabstop>Refresh_Image</tabstop>
+  <tabstop>Submit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
