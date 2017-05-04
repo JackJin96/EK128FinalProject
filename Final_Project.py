@@ -1,8 +1,8 @@
 
 
 import sys
-from PyQt5 import QtCore, QtGui, QtWidgets, uic
-from PyQt5.QtGui import QPainter, QColor, QPen
+from PyQt5 import QtWidgets, uic
+from PyQt5.QtGui import QPainter, QPen
 from PyQt5.QtCore import Qt
 from functools import partial
 import random
@@ -11,7 +11,7 @@ qtCreatorFile = "Game123.ui"  # Enter UI file here.
 
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
-####Setup different shapes####
+####Designed shapes and answers####
 p_star_key = {1:[0,0,1,1,0], 2:[0,0,0,1,1], 3:[1,0,0,0,1], 4:[1,1,0,0,0], 5:[0,1,1,0,0]}
 p_star_pos = {1:(425,175), 2:(590,300), 3:(530,490), 4:(330,490), 5:(260,300)}
 p_hexapound_key = {1:[0,1,0,1,0,1], 2:[1,0,1,0,1,0], 3:[0,1,0,1,0,1], 4:[1,0,1,0,1,0], 5:[0,1,0,1,0,1], 6:[1,0,1,0,1,0]}
@@ -64,14 +64,9 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         self.Submit.clicked.connect(self.checkAnswer)
         self.RefreshAnother.clicked.connect(self.refresh)
         self.Reset.clicked.connect(self.reset)
-    #def mousePressEvent(self, QMouseEvent):
-        #print(QMouseEvent.pos())
 
     def initUserInput(self): #initialize the matrix to be filled with 0
         self.userInput = {}
-        #self.numOfDots = 6
-        #self.shapeName = 'Hexagon with an asterisk inside'
-        #self.answer = p_hexapound_key
         n = 1
         while n <= self.numOfDots:
             self.userInput[n] = [0] * self.numOfDots
@@ -91,10 +86,6 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
             self.moveTree()
         elif r == 4:
             self.moveHanger()
-        #move the dots according to preexisted positions
-        #store the corresponding key dictionary to a variable
-
-
 
     def pushed(self, btn):
         self.dotNum2 = int(btn.objectName()[-2:])
@@ -105,11 +96,11 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         t = (btn.x()+20, btn.y()+120)
         if t != self.tempT:
             self.bigList.append(t)
-            self.update()   #somthing's wrong with this update method
+            self.update()
             self.tempT = t
-        self.shape_Name.setText(str(self.userInput))
-        self.roundResult.setText(str(t))
-                            #Don't know how to clear listT every time
+        #Below can be used for debugging
+        #self.shape_Name.setText(str(self.userInput))
+        #self.roundResult.setText(str(t))
 
     def paintEvent(self, event):
         qp = QPainter()
@@ -166,16 +157,16 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         self.Dot03.move(p_star_pos[3][0], p_star_pos[3][1])
         self.Dot04.move(p_star_pos[4][0], p_star_pos[4][1])
         self.Dot05.move(p_star_pos[5][0], p_star_pos[5][1])
-        self.Dot06.move(850, 500)
-        self.Dot07.move(850, 500)
-        self.Dot08.move(850, 500)
-        self.Dot09.move(850, 500)
-        self.Dot10.move(850, 500)
-        self.Dot11.move(850, 500)
-        self.Dot12.move(850, 500)
-        self.Dot13.move(850, 500)
-        self.Dot14.move(850, 500)
-        self.Dot15.move(850, 500)
+        self.Dot06.move(860, 580)
+        self.Dot07.move(860, 580)
+        self.Dot08.move(860, 580)
+        self.Dot09.move(860, 580)
+        self.Dot10.move(860, 580)
+        self.Dot11.move(860, 580)
+        self.Dot12.move(860, 580)
+        self.Dot13.move(860, 580)
+        self.Dot14.move(860, 580)
+        self.Dot15.move(860, 580)
 
     def moveHexapound(self):
         self.Dot01.move(p_hexapound_pos[1][0], p_hexapound_pos[1][1])
@@ -184,15 +175,15 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         self.Dot04.move(p_hexapound_pos[4][0], p_hexapound_pos[4][1])
         self.Dot05.move(p_hexapound_pos[5][0], p_hexapound_pos[5][1])
         self.Dot06.move(p_hexapound_pos[6][0], p_hexapound_pos[6][1])
-        self.Dot07.move(850, 500)
-        self.Dot08.move(850, 500)
-        self.Dot09.move(850, 500)
-        self.Dot10.move(850, 500)
-        self.Dot11.move(850, 500)
-        self.Dot12.move(850, 500)
-        self.Dot13.move(850, 500)
-        self.Dot14.move(850, 500)
-        self.Dot15.move(850, 500)
+        self.Dot07.move(860, 580)
+        self.Dot08.move(860, 580)
+        self.Dot09.move(860, 580)
+        self.Dot10.move(860, 580)
+        self.Dot11.move(860, 580)
+        self.Dot12.move(860, 580)
+        self.Dot13.move(860, 580)
+        self.Dot14.move(860, 580)
+        self.Dot15.move(860, 580)
 
     def moveTree(self):
         self.Dot01.move(p_tree_pos[1][0], p_tree_pos[1][1])
@@ -219,14 +210,14 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         self.Dot05.move(p_hanger_pos[5][0], p_hanger_pos[5][1])
         self.Dot06.move(p_hanger_pos[6][0], p_hanger_pos[6][1])
         self.Dot07.move(p_hanger_pos[7][0], p_hanger_pos[7][1])
-        self.Dot08.move(850, 500)
-        self.Dot09.move(850, 500)
-        self.Dot10.move(850, 500)
-        self.Dot11.move(850, 500)
-        self.Dot12.move(850, 500)
-        self.Dot13.move(850, 500)
-        self.Dot14.move(850, 500)
-        self.Dot15.move(850, 500)
+        self.Dot08.move(860, 580)
+        self.Dot09.move(860, 580)
+        self.Dot10.move(860, 580)
+        self.Dot11.move(860, 580)
+        self.Dot12.move(860, 580)
+        self.Dot13.move(860, 580)
+        self.Dot14.move(860, 580)
+        self.Dot15.move(860, 580)
 
 
 if __name__ == "__main__":
